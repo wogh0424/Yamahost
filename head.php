@@ -21,6 +21,23 @@ include_once(G5_LIB_PATH.'/visit.lib.php');
 include_once(G5_LIB_PATH.'/connect.lib.php');
 include_once(G5_LIB_PATH.'/popular.lib.php');
 ?>
+<div id="google_translate_element"></div>
+<script type="text/javascript">
+function googleTranslateElementInit() {
+    new google.translate.TranslateElement(
+        {
+            //gaTrack: true,  // Google 애널리틱스
+            //gaId: 'UA-*******', // Google 애널리틱스 웹 속성 ID
+            pageLanguage: 'ko', 
+            includedLanguages: 'ko,en,ja,zh-CN,de,mn,ru,vi', 
+            layout: google.translate.TranslateElement.InlineLayout.SIMPLE, autoDisplay: false, 
+            multilanguagePage: true
+        }, 
+        'google_translate_element'
+    );
+}
+</script>
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
 <!-- 상단 시작 { -->
 <div id="hd">
